@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} File Upload{% endblock %}
+
+{% block content %}
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit"> Upload </button>
+  </form>
+
+  <p><a href="{% url 'homepage' %}"> Return to home </a></p>
+
+{% endblock %}
