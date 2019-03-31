@@ -4,7 +4,7 @@
 {% block content %}
  {% for file in files %}
    <strong>{{ file.description }}</strong>
-{#   <a href="{{ file.document }}">{{ file.description }}</a>#}
+   <a href="{{ file.document }}">{{ file.description }}</a>
    <img src = "{{ file.document.url }}">
    <br>
 {% endfor %}
