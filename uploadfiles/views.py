@@ -4,7 +4,7 @@ from django.conf import settings
 from .forms import DocumentForm
 from uploadfiles.models import Document
 from django.views.generic import ListView, DetailView
-
+from django.db.models import Q
 from django.shortcuts import render,redirect
 
 User = settings.AUTH_USER_MODEL
@@ -33,13 +33,14 @@ def display_file(request):
     files = Document.objects.all()
     return render(request, 'uploadfiles/display.html', {'files': files})
 
-class DocumentListView(ListView):
+class DocumentCollectionView(ListView):
     model = Document
     template_name = 'uploadfiles/display.html'
 
     def get_queryset(self, *args, **kwargs):
         request = self.request
-        return Document.objects.filter(created_by=request.user)
+        return Document.objects.filter(Q(created_by=request.user)|Q(visible_to=request.user))
+
 
 class SearchView(ListView):
     template_name = "search/view.html"
