@@ -1,14 +1,15 @@
+from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.conf import settings
 from .forms import DocumentForm
 from uploadfiles.models import Document
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from django.shortcuts import render,redirect
 
 User = settings.AUTH_USER_MODEL
 
-
+@login_required
 def upload_file(request):
     user = request.user
 
@@ -17,7 +18,7 @@ def upload_file(request):
             form = DocumentForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
-                return redirect('homepage')
+                return redirect('home')
         else:
             form = DocumentForm()
         return render(request, 'uploadfiles/upload_file.html', {
@@ -32,6 +33,13 @@ def display_file(request):
     files = Document.objects.all()
     return render(request, 'uploadfiles/display.html', {'files': files})
 
+class DocumentListView(ListView):
+    model = Document
+    template_name = 'uploadfiles/display.html'
+
+    def get_queryset(self, *args, **kwargs):
+        request = self.request
+        return Document.objects.filter(visible_to=request.user)
 
 class SearchView(ListView):
     template_name = "search/view.html"

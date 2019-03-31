@@ -3,13 +3,19 @@
 {% block title %} File Upload{% endblock %}
 
 {% block content %}
-
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit"> Upload </button>
-  </form>
-
-  <p><a href="{% url 'homepage' %}"> Return to home </a></p>
+    <div class="row">
+        <div class="col-offset-2">
+            <div class="col-offset-2">
+                <div class="col-offset-2">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit"> Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p><a href="{% url 'index' %}"> Return to home </a></p>
 
 {% endblock %}

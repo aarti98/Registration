@@ -9,11 +9,11 @@
                     {% if registered %}
                         <h1>Thank you for registering!</h1>
                     {% else %}
-                        <form method="POST">
-                            {% csrf_token %}
-                            {{ user_form.as_p }}
-                            <input type="submit" name="" value="Register" class="btn btn-primary"
-                                   style="margin-left: 45%">
+                        <form method="POST" action="{% url 'signup' %}" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ user_form.as_p }}
+                        <input type="submit" name="" value="Register" class="btn btn-primary"
+                               style="margin-left: 45%">
                         </form>
                     {% endif %}
                 </div>

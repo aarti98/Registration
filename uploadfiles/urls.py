@@ -1,9 +1,10 @@
 from django.urls import path
-from . import views
+from uploadfiles import views
 
 
 urlpatterns = [
     path('', views.upload_file, name='file_upload'),
-    path('display', views.display_file, name = 'file_display')
+    path('documents/', views.DocumentListView.as_view(), name = 'list_display'),
+    path('documents/', views.DocumentListView.as_view(), name = 'list_display')
 ]
 
