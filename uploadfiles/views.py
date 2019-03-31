@@ -39,7 +39,7 @@ class DocumentListView(ListView):
 
     def get_queryset(self, *args, **kwargs):
         request = self.request
-        return Document.objects.filter(visible_to=request.user)
+        return Document.objects.filter(created_by=request.user)
 
 class SearchView(ListView):
     template_name = "search/view.html"
