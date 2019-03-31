@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12cc7952-5c7f-43c9-9e80-3a57629f67fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploadfiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploadfiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/.idea/website.iml" beforeDir="false" />
@@ -92,18 +90,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/account/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/registration/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -127,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="459">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -154,11 +140,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploadfiles/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/uploadfiles/display.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -230,7 +225,6 @@
         <option value="$PROJECT_DIR$/templates/uploadfiles/display.html" />
         <option value="$PROJECT_DIR$/registration/forms.py" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/account/settings.py" />
         <option value="$PROJECT_DIR$/registration/urls.py" />
         <option value="$PROJECT_DIR$/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/registration/models.py" />
@@ -241,6 +235,7 @@
         <option value="$PROJECT_DIR$/account/urls.py" />
         <option value="$PROJECT_DIR$/registration/views.py" />
         <option value="$PROJECT_DIR$/uploadfiles/models.py" />
+        <option value="$PROJECT_DIR$/account/settings.py" />
       </list>
     </option>
   </component>
@@ -286,6 +281,18 @@
               <item name="account" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="uploadfiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="account" type="b2602c69:ProjectViewProjectNode" />
@@ -371,12 +378,12 @@
       <workItem from="1553953082821" duration="1247000" />
       <workItem from="1554014069728" duration="4549000" />
       <workItem from="1554028020761" duration="1228000" />
-      <workItem from="1554042654017" duration="677000" />
+      <workItem from="1554042654017" duration="2228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39581000" />
+    <option name="totallyTimeSpent" value="41132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +402,7 @@
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49939394" visible="true" weight="0.13087606" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.42810458" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.26688454" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32849163" />
@@ -529,13 +536,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2e06116e-2ce9-4514-8d77-0f7b2ca5a659/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/uploadfiles/display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uploadfiles/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -592,13 +592,6 @@
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -660,6 +653,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/uploadfiles/display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
