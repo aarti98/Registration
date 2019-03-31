@@ -4,10 +4,13 @@
 {% block content %}
     <div>
         {% for file in object_list %}
-            <strong>{{ file.description }}</strong>
-            <a href="{{ file.document }}">{{ file.description }}</a>
-            <img src="{{ file.document.url }}">
-            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ file.description }}</h5>
+                    <a href="{{ file.document }}" class="card-link">View Document</a>
+                    <img src="{{ file.document.url }}">
+                </div>
+            </div>
         {% endfor %}
     </div>
 
