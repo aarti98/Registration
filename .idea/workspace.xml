@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="477">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -274,29 +274,6 @@
             <path>
               <item name="account" type="b2602c69:ProjectViewProjectNode" />
               <item name="account" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="uploadfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
               <item name="uploadfiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -378,12 +355,12 @@
       <workItem from="1553953082821" duration="1247000" />
       <workItem from="1554014069728" duration="4549000" />
       <workItem from="1554028020761" duration="1228000" />
-      <workItem from="1554042654017" duration="2228000" />
+      <workItem from="1554042654017" duration="2345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41132000" />
+    <option name="totallyTimeSpent" value="41249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="477">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
     </entry>
